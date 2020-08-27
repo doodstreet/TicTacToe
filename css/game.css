@@ -1,0 +1,31 @@
+/*this container includes our table and our canvas */
+.center-container {
+    width: 608px; /* this property sets width*/
+    margin: 0 auto; /*this property centers our container*/
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse; /* this property collapses table borders into 1 border. */
+    border-style: hidden;  /* hides outer border on table*/
+}
+    
+td {
+    cursor: pointer;
+    border: 8px solid rgba(103, 216, 247, 0.8); /* set table border style */
+    padding: 0px; /* removes default padding */
+    width: 200px;
+    height: 200px;
+}
+
+canvas {
+    position: absolute; /* position canvas to top left corner of our container */
+    z-index: 10; /* places our canvas on top of our table, higher the z-index number the higher on the layer-stack it is */
+    pointer-events: none; /* this property makes our canvas invisible */  
+}
+ 
+h1 {
+    text-align: center;
+    color: blue;
+    background-color: pink;
+}
