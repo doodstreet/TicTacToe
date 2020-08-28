@@ -53,7 +53,7 @@ function placeXOrO(squareNumber) {
     // If the random number evaluated returns true, the square has not been selected yet.
         if (placeXOrO(pickASquare)) {
     // This line calls the function.
-            placeXOro(pickASquare);
+           (placeXOrO(pickASquare));
     //This changes our boolean and ends the loop.
             success = true;
             };
@@ -66,21 +66,21 @@ function checkWinConditions() {
     // 'x' 0, 1, 2 condition.
     if     (arrayIncludes('0x', '1x', '2x')) { drawWinLine(50, 100, 558, 100);}
     // 'x' 3, 4, 5 conditions and on down for every line cross possibility.
-    else if(arrayIncludes('3x', '4x', '5x')) { drawWinLIne(50, 304, 558, 304);}
+    else if(arrayIncludes('3x', '4x', '5x')) { drawWinLine(50, 304, 558, 304);}
     else if(arrayIncludes('6x', '7x', '8x')) { drawWinLine(50, 508, 558, 508);}
     else if(arrayIncludes('0x', '3x', '6x')) { drawWinLine(100, 50, 100, 558);}
-    else if(arrayIncludes('1x', '4x', '7x')) { drawWinLIne(304, 50, 304, 558);}
+    else if(arrayIncludes('1x', '4x', '7x')) { drawWinLine(304, 50, 304, 558);}
     else if(arrayIncludes('2x', '5x', '8x')) { drawWinLine(508, 50, 508, 558);}
-    else if(arrayIncludes('6x', '4x', '2x')) { drawWinLIne(100, 508, 510, 90);}
+    else if(arrayIncludes('6x', '4x', '2x')) { drawWinLine(100, 508, 510, 90);}
     else if(arrayIncludes('0x', '4x', '8x')) { drawWinLine(100, 100, 520, 520);}
-    else if(arrayIncludes('0o', '1o', '2o')) { drawWinLIne(50, 100, 558, 100);}
-    else if(arrayIncludes('3o', '4o', '5o')) { drawWinLIne(50, 304, 558, 304);}
-    else if(arrayIncludes('6o', '7o', '8o')) { drawWinLIne(50, 508, 558, 508);}
-    else if(arrayIncludes('0o', '3o', '6o')) { drawWinLIne(100, 50, 100, 558);}
+    else if(arrayIncludes('0o', '1o', '2o')) { drawWinLine(50, 100, 558, 100);}
+    else if(arrayIncludes('3o', '4o', '5o')) { drawWinLine(50, 304, 558, 304);}
+    else if(arrayIncludes('6o', '7o', '8o')) { drawWinLine(50, 508, 558, 508);}
+    else if(arrayIncludes('0o', '3o', '6o')) { drawWinLine(100, 50, 100, 558);}
     else if(arrayIncludes('1o',' 4o', '7o')) { drawWinLine(304, 50, 304, 558);}
     else if(arrayIncludes('2o', '5o', '8o')) { drawWinLine(508, 50, 508, 558);}
-    else if(arrayIncludes('6o', '4o', '2o')) { drawWinline(100, 508, 510, 90);}
-    else if(arrayIncludes('0o', '4o', '8o')) { drawWinline(100, 100, 520, 520);}
+    else if(arrayIncludes('6o', '4o', '2o')) { drawWinLine(100, 508, 510, 90);}
+    else if(arrayIncludes('0o', '4o', '8o')) { drawWinLine(100, 100, 520, 520);}
 // This condition checks for ti. If none of the above conditions register
 // and 9 squares are selected, the code executes.
     else if(selectedSquares.length >= 9) {
